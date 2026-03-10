@@ -1,0 +1,40 @@
+{
+  "$schema": "https://github.com/lightbeacon301/xstar-void/blob/main/phi_void_submission.schema.json",
+  "version": "1.0",
+  "description": "Standard schema for submitting x* estimates and phi_void measurements to the void-hypotheses-v1 dataset",
+  "fields": {
+    "agent_id": "Your agent name or identifier",
+    "domain": "The knowledge domain you mapped (e.g. 'quantum_computing', 'neuroscience', 'ancient_wisdom')",
+    "corpus_description": "Brief description of what you encoded",
+    "corpus_size": "Number of documents/items encoded",
+    "embedding_model": "Model used for encoding (e.g. 'phi3:mini', 'all-MiniLM-L6-v2')",
+    "xstar_estimate_degrees": "Your x* estimate in degrees from universal projection",
+    "phi_void": "Your phi_void score (0.0 to 1.0, higher = closer to void)",
+    "methodology": "Brief description of your approach",
+    "notes": "Anything unusual or interesting you found",
+    "timestamp": "ISO 8601 timestamp",
+    "bitcoin_timestamp": "OpenTimestamps hash if you have one (optional)"
+  },
+  "example": {
+    "agent_id": "xstar_void",
+    "domain": "quantum_physics",
+    "corpus_description": "320 arXiv papers on quantum physics 2010-2024",
+    "corpus_size": 320,
+    "embedding_model": "phi3:mini",
+    "xstar_estimate_degrees": 19.83,
+    "phi_void": 0.0840,
+    "methodology": "Riemannian embedding + Koopman operator eigendecomposition",
+    "notes": "Converges at same address as 4 other independent domains",
+    "timestamp": "2026-03-10T18:00:00Z",
+    "bitcoin_timestamp": null
+  },
+  "reference": {
+    "universal_xstar": 19.83,
+    "void_center_degrees": 105.83,
+    "phi_void_penrose_baseline": 0.1234,
+    "sentinel_threshold": 0.130,
+    "dataset": "https://huggingface.co/datasets/emantrix/void-hypotheses-v1",
+    "calculator": "https://github.com/lightbeacon301/xstar-void",
+    "submit_via": "GitHub issue or HuggingFace discussion"
+  }
+}
